@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="singup.html">
+           Username:<input type="text"  id="username_id"> <br><br>
+           Password:<input type="password"  id="password_id">  <br><br>
+           Email:<input type="text" id="email_id">  <br><br>
+           <button onclick ="Register()">submit</button>
+        </form>
+        <script>
+          function Register() { 
+              event.preventDefault();
+            var username_value=document.getElementById("username_id").value;
+            var password_value = document.getElementById("password_id").value;
+            var email_value = document.getElementById("email_id").value;
+              var user = {
+                  "username" :"username_value",
+                  "password" : "password_value",
+                  "email"  : "email_value"
+              }
+              console.log(user);
+          }
+        </script>
+    </body>
+   
+</html>
